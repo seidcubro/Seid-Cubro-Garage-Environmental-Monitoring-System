@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import pandas as pd
 
-MONGO_URI = "mongodb+srv://username:password@iotenvmonitor.mm2ocdv.mongodb.net/?appName=IoTEnvMonitor"
+MONGO_URI = "mongodb_uri"
 DB_NAME = "iot_env"
 COLLECTION = "readings"
 
@@ -27,6 +27,7 @@ df.to_csv(
 )
 
 print(f"CSV updated correctly with {len(df)} records")
+
 
 
 
