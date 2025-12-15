@@ -5,10 +5,10 @@ import paho.mqtt.client as mqtt
 
 SERIAL_PORT = "COM3"
 BAUD_RATE = 9600
-BROKER = "eca20bedafe647028313f114982d0feb.s1.eu.hivemq.cloud"
+BROKER = "url.s1.eu.hivemq.cloud"
 PORT = 8883
-USERNAME = "seidcubro"
-PASSWORD = "220022Seid"
+USERNAME = "username"
+PASSWORD = "password"
 TOPIC = "sensor/dht11"
 
 def on_connect(client, userdata, flags, rc):
@@ -60,5 +60,6 @@ while True:
 
     except Exception as e:
         print("PARSE ERROR:", e)
+
 
 
