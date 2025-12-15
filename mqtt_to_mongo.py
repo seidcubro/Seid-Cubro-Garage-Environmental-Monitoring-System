@@ -3,13 +3,13 @@ from datetime import datetime
 import paho.mqtt.client as mqtt
 from pymongo import MongoClient
 
-BROKER = "eca20bedafe647028313f114982d0feb.s1.eu.hivemq.cloud"
+BROKER = "url.s1.eu.hivemq.cloud"
 PORT = 8883
-USERNAME = "seidcubro"
-PASSWORD = "220022Seid"
+USERNAME = "username"
+PASSWORD = "password"
 TOPIC = "sensor/dht11"
 
-MONGO_URI = "mongodb+srv://seidcubro:220022Seid@iotenvmonitor.mm2ocdv.mongodb.net/?appName=IoTEnvMonitor"
+MONGO_URI = "mongo_uri"
 DB_NAME = "iot_env"
 COLLECTION = "readings"
 
@@ -43,4 +43,5 @@ client.on_message = on_message
 
 client.connect(BROKER, PORT)
 client.loop_forever()
+
 
