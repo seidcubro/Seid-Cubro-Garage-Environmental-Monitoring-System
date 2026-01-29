@@ -10,8 +10,8 @@ PASSWORD = "password"
 TOPIC = "sensor/dht11"
 
 MONGO_URI = "mongo_uri"
-DB_NAME = "iot_env"
-COLLECTION = "readings"
+DB_NAME = "db_name"
+COLLECTION = "db_collectioh"
 
 mongo = MongoClient(MONGO_URI)
 db = mongo[DB_NAME]
@@ -43,5 +43,6 @@ client.on_message = on_message
 
 client.connect(BROKER, PORT)
 client.loop_forever()
+
 
 
